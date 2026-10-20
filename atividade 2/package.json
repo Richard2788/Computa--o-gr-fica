@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "canvas": "^3.2.3",
+    "node": "^26.12.0",
+    "nodemon": "^1.14.10"
+  },
+  "allowScripts": {
+    "canvas@3.2.3": true,
+    "node@26.12.0": true,
+    "nodemon@1.19.4": true
+  }
+}
