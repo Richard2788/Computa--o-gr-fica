@@ -1,8 +1,18 @@
 {
+  "name": "atividade-2",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "desenho.js",
+  "scripts": {
+    "start": "nodemon exercicio1.js"
+  },
   "dependencies": {
     "canvas": "^3.2.3",
     "node": "^26.12.0",
-    "nodemon": "^1.14.10"
+    "nodemon": "^1.19.4"
   },
   "allowScripts": {
     "canvas@3.2.3": true,
