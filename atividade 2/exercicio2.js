@@ -10,7 +10,7 @@ ctx.rect(0, 0, canvas.width, canvas.height);
 ctx.fillStyle = 'white';
 ctx.fill();
 
-function desenharMalha8por8DeQuadrados() {
+function desenharPoligono() {
   const tamanhoQuadrado = 50;
 
   ctx.lineWidth = 1;

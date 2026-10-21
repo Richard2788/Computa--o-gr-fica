@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "desenho.js",
   "scripts": {
-    "start": "nodemon exercicio2.js"
+    "start": "nodemon exercicio3.js"
   },
   "dependencies": {
     "canvas": "^3.2.3",
