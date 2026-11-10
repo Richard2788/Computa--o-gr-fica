@@ -1,0 +1,370 @@
+{
+  "info": {
+    "id": "ses_e39f29146fferQrRY5jZb9eN6N",
+    "projectID": "cbdfe0f0ae677ba2d6929b28a89f8d6c800ccb17",
+    "agent": "build",
+    "model": {
+      "id": "glm-5.3-flash-free",
+      "providerID": "opencode",
+      "variant": "low"
+    },
+    "cost": 0,
+    "tokens": {
+      "input": 24337,
+      "output": 4404,
+      "reasoning": 365,
+      "cache": {
+        "read": 53312,
+        "write": 0
+      }
+    },
+    "outcome": "succeeded",
+    "time": {
+      "created": 1794324131522,
+      "updated": 1794324403266,
+      "idle": 1794324403268,
+      "viewed": 1794324403268
+    },
+    "title": "Planejamento de jogo 2D com SAT.js e JS",
+    "permissions": [
+      {
+        "action": "browser",
+        "resource": "*",
+        "effect": "allow"
+      }
+    ],
+    "location": {
+      "directory": "C:\\Users\\aluno\\Documents\\Projeto Padrão"
+    }
+  },
+  "messages": [
+    {
+      "id": "msg_1c60e26520013CNq65QD5snemS",
+      "metadata": {
+        "displayText": "Planeje um jogo de luta tradicional 2D no \"https://github.com/Richard2788/Computa--o-gr-fica.git\" utilizando sat.js e js. Recomente métodos de análise e programação e ferramentas para renderização gráfica.",
+        "comments": [],
+        "attachments": [],
+        "agent": "build",
+        "model": {
+          "modelID": "glm-5.3-flash-free",
+          "providerID": "opencode",
+          "variant": "low"
+        }
+      },
+      "time": {
+        "created": 1794324178544
+      },
+      "text": "Planeje um jogo de luta tradicional 2D no \"https://github.com/Richard2788/Computa--o-gr-fica.git\" utilizando sat.js e js. Recomente métodos de análise e programação e ferramentas para renderização gráfica.",
+      "files": [],
+      "agents": [],
+      "type": "user"
+    },
+    {
+      "id": "msg_1c60e2673001JYhs8MT2WvGwNZ",
+      "time": {
+        "created": 1794324178553,
+        "streamed": 1794324181167,
+        "completed": 1794324181435
+      },
+      "type": "assistant",
+      "agent": "build",
+      "model": {
+        "id": "glm-5.3-flash-free",
+        "providerID": "opencode",
+        "variant": "low"
+      },
+      "content": [
+        {
+          "type": "reasoning",
+          "text": "The user wants a plan for a 2D traditional fighting game using SAT.js and JS, in that repo. Let me check the repo directory — working dir is \"Projeto Padrão\", not a git repo. Maybe the repo needs cloning? The user links a GitHub repo. Let me check what's in the working directory first, maybe the repo is already there. Then possibly clone. Let me look.",
+          "native": {
+            "reasoningField": "reasoning_content"
+          },
+          "time": {
+            "created": 1794324179513,
+            "completed": 1794324181163
+          }
+        },
+        {
+          "type": "tool",
+          "id": "chatcmpl-tool-a56480bcdd7b3ebf",
+          "name": "shell",
+          "executed": false,
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "Get-ChildItem -Force",
+              "workdir": "C:\\Users\\aluno\\Documents\\Projeto Padrão"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "\r\n\r\n    Diret�rio: C:\\Users\\aluno\\Documents\\Projeto Padr�o\r\n\r\n\r\nMode                 LastWriteTime         Length Name                                                                 \r\n----                 -------------         ------ ----                                                                 \r\nd--h--        10/11/2026     12:22                .git                                                                 \r\nd-----        10/11/2026     12:22                atividade 2                                                          \r\nd-----        10/11/2026     12:22                atividade 4                                                          \r\n-a----        10/11/2026     12:22             13 .gitignore                                                           \r\n\r\n\r\n"
+              }
+            ],
+            "metadata": {
+              "status": "completed",
+              "truncated": false,
+              "exit": 0
+            }
+          },
+          "time": {
+            "created": 1794324180956,
+            "ran": 1794324181166,
+            "completed": 1794324181433
+          }
+        }
+      ],
+      "finish": "tool-calls",
+      "rawFinish": "tool_calls",
+      "cost": 0,
+      "tokens": {
+        "input": 6204,
+        "output": 36,
+        "reasoning": 84,
+        "cache": {
+          "read": 0,
+          "write": 0
+        }
+      }
+    },
+    {
+      "id": "msg_1c60e31c2001525i6T2GthUjkc",
+      "time": {
+        "created": 1794324181447,
+        "streamed": 1794324183130,
+        "completed": 1794324183459
+      },
+      "type": "assistant",
+      "agent": "build",
+      "model": {
+        "id": "glm-5.3-flash-free",
+        "providerID": "opencode",
+        "variant": "low"
+      },
+      "content": [
+        {
+          "type": "tool",
+          "id": "chatcmpl-tool-af1988d5dba59be8",
+          "name": "shell",
+          "executed": false,
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "git remote -v; git log --oneline -3; Get-ChildItem \"atividade 2\",\"atividade 4\"",
+              "workdir": "C:\\Users\\aluno\\Documents\\Projeto Padrão"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "origin\thttps://github.com/Richard2788/Computa--o-gr-fica.git (fetch)\norigin\thttps://github.com/Richard2788/Computa--o-gr-fica.git (push)\nf5d6499 update: finalizado o index.html\n5e2b942 create: criado o index.html da atividade 4\n9fa449c update e create: atualizado o exercicio2.js e criado e finalizado o exercicio3.js\n\r\n\r\n    Diret�rio: C:\\Users\\aluno\\Documents\\Projeto Padr�o\\atividade 2\r\n\r\n\r\nMode                 LastWriteTime         Length Name                                                                 \r\n----                 -------------         ------ ----                                                                 \r\n-a----        10/11/2026     12:22            531 desenho.js                                                           \r\n-a----        10/11/2026     12:22           1372 exercicio1.js                                                        \r\n-a----        10/11/2026     12:22          10337 exercicio1_resultado.png                                             \r\n-a----        10/11/2026     12:22           3084 exercicio2.js                                                        \r\n-a----        10/11/2026     12:22         139116 exercicio2_resultado.png                                             \r\n-a----        10/11/2026     12:22           1308 exercicio3.js                                                        \r\n-a----        10/11/2026     12:22          34016 exercicio3_resultado.png                                             \r\n-a----        10/11/2026     12:22         107171 package-lock.json                                                    \r\n-a----        10/11/2026     12:22            490 package.json                                                         \r\n-a----        10/11/2026     12:22           7434 resultado.png                                                        \r\n\r\n\r\n    Diret�rio: C:\\Users\\aluno\\Documents\\Projeto Padr�o\\atividade 4\r\n\r\n\r\nMode                 LastWriteTime         Length Name                                                                 \r\n----                 -------------         ------ ----                                                                 \r\n-a----        10/11/2026     12:22           2459 index.html                                                           \r\n\r\n\r\n"
+              }
+            ],
+            "metadata": {
+              "status": "completed",
+              "truncated": false,
+              "exit": 0
+            }
+          },
+          "time": {
+            "created": 1794324182647,
+            "ran": 1794324183129,
+            "completed": 1794324183457
+          }
+        }
+      ],
+      "finish": "tool-calls",
+      "rawFinish": "tool_calls",
+      "cost": 0,
+      "tokens": {
+        "input": 1018,
+        "output": 58,
+        "reasoning": 0,
+        "cache": {
+          "read": 5440,
+          "write": 0
+        }
+      }
+    },
+    {
+      "id": "msg_1c60e39aa001YdvnutrDCvHvPY",
+      "time": {
+        "created": 1794324183471,
+        "streamed": 1794324185878,
+        "completed": 1794324185885
+      },
+      "type": "assistant",
+      "agent": "build",
+      "model": {
+        "id": "glm-5.3-flash-free",
+        "providerID": "opencode",
+        "variant": "low"
+      },
+      "content": [
+        {
+          "type": "tool",
+          "id": "chatcmpl-tool-932cd36a21e7c1b5",
+          "name": "read",
+          "executed": false,
+          "state": {
+            "status": "completed",
+            "input": {
+              "path": "C:\\Users\\aluno\\Documents\\Projeto Padrão\\atividade 4\\index.html"
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Read file C:\\Users\\aluno\\Documents\\Projeto Padrão\\atividade 4\\index.html, lines 1-85\n1: <!doctype html>\r\n2: <html lang=\"pt-BR\">\r\n3:   <head>\r\n4:     <meta charset=\"UTF-8\" />\r\n5:     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n6:     <title>Minha Primeira Cena 3D</title>\r\n7:     <style>\r\n8:       body {\r\n9:         margin: 0;\r\n10:         overflow: hidden;\r\n11:         background-color: #000;\r\n12:       }\r\n13:       canvas {\r\n14:         display: block;\r\n15:       }\r\n16:     </style>\r\n17:     <!-- Importando a biblioteca Three.js via CDN -->\r\n18:     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js\"></script>\r\n19:   </head>\r\n20:   <body>\r\n21:     <script>\r\n22:       // 1. CRIANDO A CENA\r\n23:       const scene = new THREE.Scene();\r\n24: \r\n25:       // Criando o renderizador\r\n26:       const renderer = new THREE.WebGLRenderer({ antialias: true });\r\n27: \r\n28:       renderer.setSize(window.innerWidth, window.innerHeight);\r\n29:       document.body.appendChild(renderer.domElement);\r\n30:       \r\n31:       const light = new THREE.DirectionalLight(0xffffff, 1.5);\r\n32:       light.position.set(5, 5, 5);\r\n33:       scene.add(light);\r\n34: \r\n35:       const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);\r\n36:       scene.add(ambientLight);\r\n37: \r\n38:       // 2. CONFIGURANDO A CÂMERA (Campo de visão, Proporção, Near, Far)\r\n39:       const camera = new THREE.PerspectiveCamera(\r\n40:         75,\r\n41:         window.innerWidth / window.innerHeight,\r\n42:         0.1,\r\n43:         1000,\r\n44:       );\r\n45:       camera.position.z = 5; // Afasta a câmera no eixo Z para ver o objeto\r\n46: \r\n47:       // 1. Criar as geometrias\r\n48:       const geometria1 = new THREE.DodecahedronGeometry(1, 1, 1);\r\n49:       const geometria2 = new THREE.TorusGeometry(0.8, 0.3, 16, 100);\r\n50: \r\n51:       // 2. Definir materiais e cores\r\n52:       const material1 = new THREE.MeshStandardMaterial({\r\n53:         color: 0x0066ff,\r\n54:       });\r\n55: \r\n56:       const material2 = new THREE.MeshStandardMaterial({\r\n57:         color: 0xff6600,\r\n58:       });\r\n59: \r\n60:       // 3. Construir os objetos\r\n61:       const objeto1 = new THREE.Mesh(geometria1, material1);\r\n62:       const objeto2 = new THREE.Mesh(geometria2, material2);\r\n63: \r\n64:       // 4. Posicionar os objetos na cena\r\n65:       objeto1.position.x = -2;\r\n66:       objeto2.position.x = 2;\r\n67: \r\n68:       // 5. Adicionar os objetos à cena\r\n69:       scene.add(objeto1);\r\n70:       scene.add(objeto2);\r\n71: \r\n72:       // 6. Criar a animação\r\n73:       function animate() {\r\n74:         requestAnimationFrame(animate);\r\n75: \r\n76:         objeto1.rotation.y += 0.02;\r\n77:         objeto2.rotation.x -= 0.03;\r\n78: \r\n79:         renderer.render(scene, camera);\r\n80:       }\r\n81: \r\n82:       animate();\r\n83:     </script>\r\n84:   </body>\r\n85: </html>\r"
+              }
+            ],
+            "metadata": {
+              "truncated": false
+            }
+          },
+          "time": {
+            "created": 1794324185728,
+            "ran": 1794324185876,
+            "completed": 1794324185884
+          }
+        }
+      ],
+      "finish": "tool-calls",
+      "rawFinish": "tool_calls",
+      "cost": 0,
+      "tokens": {
+        "input": 1554,
+        "output": 32,
+        "reasoning": 0,
+        "cache": {
+          "read": 5440,
+          "write": 0
+        }
+      }
+    },
+    {
+      "id": "msg_1c60e4324001VdIXmAZ3EH4UzM",
+      "time": {
+        "created": 1794324185898,
+        "streamed": 1794324209427,
+        "completed": 1794324209428
+      },
+      "type": "assistant",
+      "agent": "build",
+      "model": {
+        "id": "glm-5.3-flash-free",
+        "providerID": "opencode",
+        "variant": "low"
+      },
+      "content": [
+        {
+          "type": "reasoning",
+          "text": "The user asks for a plan (planeje) — not necessarily implementation. They want a plan for a 2D fighting game using SAT.js and JS, with recommended analysis/programming methods and rendering tools. This appears to be for a computer graphics course. Just deliver a plan in Portuguese. No need to implement. Keep it structured and reasonably concise.",
+          "native": {
+            "reasoningField": "reasoning_content"
+          },
+          "time": {
+            "created": 1794324186673,
+            "completed": 1794324209424
+          }
+        },
+        {
+          "type": "text",
+          "text": "Já verifiquei o repositório: ele é o seinen da disciplina de Computação Gráfica (com `atividade 2` usando p5.js e `atividade 4` usando Three.js/Canvas). O plano abaixo se encaixa bem como um novo diretório, ex.: `atividade 5/jogo-luta/`.\n\n# Plano: Jogo de Luta 2D Tradicional (SAT.js + JavaScript)\n\n## 1. Visão geral\n- **Gênero:** luta 2D estilo Street Fighter (1v1, lado a lado, câmera fixa que acompanha os dois lutadores).\n- **Stack:** HTML5 + Canvas 2D +** SAT.js** (separação em eixos + teorema do eixo separador, para colisões precisas de poligonos) + JavaScript puro (sem framework).\n- **Estrutura:** `index.html`, `js/` com módulos (entidades, input, física, colisão, render, estados do jogo).\n- **Execução:** pode ser servido com `Live Server` (VS Code) ou `http-server`/`serve` via npm, seguindo o padrão das atividades anteriores.\n\n## 2. Métodos de análise recomendados\n1. **Análise de requisitos funcionais (casos de uso):**\n   - Movimento (andar, pular, agachar), ataques (soco rápido, soco forte, chute, especial), dano, vida, blocos, temporizador de round, best-of-3, telas (título, seleção, luta, vitória).\n2. **Modelagem com diagramas (UML):**\n   - **Máquina de estados finita (FSM)** para cada lutador: `IDLE → WALK → DASH → ATTACK_STARTUP → ACTIVE → RECOVERY → BLOCK → KNOCKDOWN`. Essa é a análise central de um jogo de luta.\n   - **Diagrama de classe** para `Fighter`, `Hitbox`, `Hurtbox`, `InputManager`, `Game`.\n   - **Tabela de frame data** (frames de startup / active / recovery, dano, hitstun, blockstun, knockback) para balancear cada golpe — análise típica de jogos de luta.\n3. **Análise de colisões (o papel do SAT.js):**\n   - Todo corpo é um **polígono convexo ou círculo** do SAT.js.\n   - **Hurtbox** = polígono do corpo do lutador (falvel); **Hitbox** = polígono do golpe (agressor); **Pushbox** = impede sobreposição dos corpos.\n   - Colisão via `SAT.testPolygonPolygon()` / `testPolygonCircle()`.\n4. **Análise de desempenho:** endurecer o game loop (delta-time fixo de 60 fps com acumulador) e verificar custo de testes SAT por frame (pode usar broad-phase com quadtree/AABB se necessário).\n\n## 3. Metodologias de programação\n- **Programação orientada a objetos** (classes: `Fighter`, `Projectile`, `Stage`, `HUD`), coerente com JS padrão.\n- **Game loop padrão:** `update()` (lógica + física + SAT) → `render()` (desenho), desacoplados.\n- **FSM (State Pattern):** cada estado do lutador é uma classe/objeto com `enter/update/exit`.\n- **Componentes + Espectador (Observer)** opcional: eventos como `onHit`, `onKO` disparando efeitos e HUD.\n- **Versionamento contínuo:** commits pequenos no repositório (`git add` por módulo), branch `feature/jogo-luta` → PR.\n- **Testes:** testes unitários das funções de colisão (SAT é determinístico) com Jest/Vitest, e playtest manual com checklist.\n\n## 4. Renderização gráfica (opções recomendadas)\n| Opção | Quando usar |\n|---|---|\n| **Canvas 2D nativo (recomendado)** | Compatível 100 % com SAT.js, sprites 2D, leve, igual às atividades anteriores |\n| **p5.js** | Protótipo rápido (já usado na atividade 2) — útil só para demo inicial |\n| **WebGL / Three.js (isométrico fake)** | Evitar aqui: 3D complica a lógica de luta 2D |\n| **Efeitos:** shake de câmera, hit-stop (frame freeze), trails de sprite, partículas simples em Canvas | Dão qualidade visual mínima |\n\n**Sprites:** desenhar com `rect`/`fill` (placeholder), depois trocar por spritesheets com `drawImage` + `Image` e corte por frame; animação via matriz de frames por estado.\n\n## 5. Roadmap de implementação\n1. **Setup:** `index.html`, canvas, CDN da SAT.js (ex.: `https://cdn.jsdelivr.net/npm/sat@0.9.0`), game loop com delta time.\n2. **Input:** `keydown/keyup` mapeado (P1: WASD + J/K; P2: setas + vírgula/ponto), buffer de input simples.\n3. **Movement:** gravidade, pulo, pushbox com SAT (`testPolygonPolygon` para impedir sobreposição).\n4. **Ataques + hitboxes:** spawn da hitbox no frame \"active\"; teste SAT contra hurtbox inimigo; aplicar dano, hitstun e knockback.\n5. **Defesa:** bloquear (reduz dano), rounds, vida, timer, KO.\n6. **Arte e polimento:** spritesheets, partículas, som via WebAudio, HUD (barras, timer, rounds).\n7. **Entrega:** README no diretório da atividade com diagrama FSM, tabela de frame data e prints.\n\nQuer que eu já comece a implementar esse jogo dentro de `atividade 5` (com SAT.js e Canvas 2D, com placeholders coloridos como lutadores)?"
+        }
+      ],
+      "finish": "stop",
+      "rawFinish": "stop",
+      "cost": 0,
+      "tokens": {
+        "input": 1368,
+        "output": 1346,
+        "reasoning": 71,
+        "cache": {
+          "read": 6528,
+          "write": 0
+        }
+      }
+    },
+    {
+      "id": "msg_1c60e9f15002RVDbjy2wa3BACA",
+      "time": {
+        "created": 1794324209429
+      },
+      "type": "idle",
+      "outcome": "succeeded"
+    },
+    {
+      "id": "msg_1c6112f51001iZrWjTgQZ41OaF",
+      "metadata": {
+        "displayText": "Sobre os métodos de análise e programação, digo: Quais padrões ou lógicas serão utilizados (ex: programação orientada a objetos, uso de loops de renderização, tratamento de colisões, controle de estados de jogo).",
+        "comments": [],
+        "attachments": [],
+        "agent": "build",
+        "model": {
+          "modelID": "glm-5.3-flash-free",
+          "providerID": "opencode",
+          "variant": "low"
+        }
+      },
+      "time": {
+        "created": 1794324377468
+      },
+      "text": "Sobre os métodos de análise e programação, digo: Quais padrões ou lógicas serão utilizados (ex: programação orientada a objetos, uso de loops de renderização, tratamento de colisões, controle de estados de jogo).",
+      "files": [],
+      "agents": [],
+      "type": "user"
+    },
+    {
+      "id": "msg_1c6112f81001FDg3MuwylUJ7Xt",
+      "time": {
+        "created": 1794324377481,
+        "streamed": 1794324403265,
+        "completed": 1794324403266
+      },
+      "type": "assistant",
+      "agent": "build",
+      "model": {
+        "id": "glm-5.3-flash-free",
+        "providerID": "opencode",
+        "variant": "low"
+      },
+      "content": [
+        {
+          "type": "reasoning",
+          "text": "The user wants a detailed breakdown of the patterns/logics: OOP, game loop, collision handling, game state control. Answer in Portuguese, structured, concrete to SAT.js/Canvas 2D. No tools needed.",
+          "native": {
+            "reasoningField": "reasoning_content"
+          },
+          "time": {
+            "created": 1794324380167,
+            "completed": 1794324403261
+          }
+        },
+        {
+          "type": "text",
+          "text": "# Padrões e lógicas do jogo — detalhamento\n\n## 1. Programação Oriental a Objetos (POO) — padrão de base\nTodo o código será estruturado em **classes ES6**, com herança e composição:\n\n| Classe | Responsabilidade |\n|---|---|\n| `Game` | Orquestra o loop, estados, renderizador |\n| `Entity` (base) | posição, velocidade, polígono SAT, `update()`, `draw()` |\n| `Fighter extends Entity` | física + FSM + vida + inputs do jogador |\n| `Hitbox / Hurtbox` | subclasses de `SAT.Polygon` ou `SAT.Circle` com metadados (dano, dono, frame ativo) |\n| `InputManager` | captura teclado por jogador |\n| `Stage / Camera` | chão, limites, câmera lateral |\n| `HUD` | barras de vida, timer, rounds |\n| `SoundManager` | WebAudio para efeitos |\n\n- **Herança** só onde há real superclasse (`Entity` → `Fighter`); o resto é **composição** (ex.: `Fighter` *tem* um `StateMachine`, *tem* um `AnimationController`) — composição evita hierarquias profundas.\n\n## 2. Game Loop — *fixed timestep* (padrão de física determinística)\n```\nloop (requestAnimationFrame):\n  acumulador += delta\n  while acumulador >= STEP (1/60 s):\n      input -> update() -> colisões SAT -> eventos\n      acumulador -= STEP\n  render(interpolação entre estados anteriores/próximos)\n```\n- Lógica e renderização **desacopladas**: a física roda a Passo fixo de 60 Hz (importante para frame data dos golpes ser estável), e o Canvas desenhar o frame mais recente possível (pode ser 120 Hz num monitor rápido).\n- `requestAnimationFrame` (nunca `setInterval`), com cap de delta para evitar \"teleporte\" ao voltar de aba inativa.\n\n## 3. Tratamento de colisões — SAT.js com three-camadas\n- **Broad-phase próprio:** teste rápido de AABB antes do SAT (com `Bounds.prototype.overlaps` da biblioteca) para descartar pares — evita testar todos os polígonos uns contra os outros.\n- **Narrow-phase — SAT:**\n  - `SAT.testPolygonPolygon(hurtbox, hitbox)` → golpe acerta?\n  - `SAT.testPolygonCircle()` para golpes circulares/projeteis;\n  - `response.overlap_V()` fornece o vetor de separação → usado para **knockback e pushbox** (empurrar os lutadores para não se sobreporem).\n- **Governa de colisão (regras de luta):**\n  1. Hitbox acerta Hurtbox **no máximo 1 vez por golpe** (flag `hasHit` resetada no início do ataque).\n  2. Hitboxes nunca interagem entre si; Pushboxes nunca geram dano.\n  3. Se dois golpes ativos se simultaneamente → **trade** (os dois tomam dano), resolvido na mesma iteração.\n  4. Resposta após hit: hitstun (frames de bloqueio do input), hit-stop global (2–5 frames congelados para \"peso\"), knockback horizontal + vertical.\n- **Ordem de update:** mover entidades → resolver Pushbox (separação) → testar Hits → aplicar estados.\n\n## 4. Controle de estados — dois níveis\n\n### a) FSM do lutador (State Pattern)\n```\nIDLE ── WALK_F/WALK_B ── JUMP ── CROUCH\n  │         │\n  └──── ATTACK_R/ATTACK_F/CHUTE_ESPECIAL ── RECOVERY ── IDLE\n  BLOCK ── BLOCKSTUN ── HITSTUN ── KNOCKDOWN ── GETUP\n```\n- Cada estado é um objeto com `{ enter, update(frameData), exit }` — `StateMachine.change()` valida transições (ex.: não pode sair de STARTUP antes do frame ativo).\n- O ataque segue os **frames**: `startup → active → recovery`; a hitbox só existe no estado `active`.\n\n### b) FSM do jogo (máquina de estados global)\n```\nTITLE → CHARACTER_SELECT → ROUND_START(“Round 1… FIGHT!”)\n      → FIGHTING → ROUND_END → (MATCH_END → VICTORY) | (ROUND_START)\n```\n- Implementada como enum + `switch` (ou objetos de estado) dentro de `Game.update()/render()` — simples e didático, adequado à disciplina.\n\n## 5. Outros padrões complementares\n- **Singleton** apenas para `Game` e gestores (input, som) — controle global único.\n- **Observer/Eventos (EventBus):** `bus.emit('hit', {attacker, damage})`; HUD e câmera-shake escutam sem acoplamento direto.\n- **Object Pool** para partículas/hit effects (evita alocar objetos em GC a cada hit).\n- **Sequencing de animação:** cada estado aponta para os frames da spritesheet × velocidade de reprodução — animação **dirigida pela FSM**, não pelo tempo.\n- **Componentes de dados (frame data table):** golpes definidos como objetos-configuração `{ damage, startup, active, recovery, hitstun, knockX, knockY, hitbox: {offset, w, h} }` → fácil balancear e documentar.\n\nResumindo: **POO + composição** como estrutura, **fixed timestep** como loop, **SAT com broad/narrow-phase e regras de hitbox** como colisão, e **duas FSMs** (lutador + jogo) como controle de estado — exatamente o conjunto de padrões usado em jogos de luta 2D profissionais."
+        }
+      ],
+      "finish": "stop",
+      "rawFinish": "stop",
+      "cost": 0,
+      "tokens": {
+        "input": 1750,
+        "output": 1326,
+        "reasoning": 45,
+        "cache": {
+          "read": 7616,
+          "write": 0
+        }
+      }
+    },
+    {
+      "id": "msg_1c61194440016tc9vWiyZ1uei6",
+      "time": {
+        "created": 1794324403268
+      },
+      "type": "idle",
+      "outcome": "succeeded"
+    }
+  ]
+}
